@@ -4,7 +4,9 @@
   "description": "Aprendizado da linguagem (superset) TypeScript",
   "main": "index.js",
   "scripts": {
-    "exemplo_01": "ts-node-dev ./01_verificação_de_tipos/exemplo_01.ts"
+    "exemplo_01": "ts-node-dev ./01_verificação_de_tipos/exemplo_01.ts",
+    "exemplo_02": "ts-node-dev ./01_verificação_de_tipos/exemplo_02.ts",
+    "exemplo_03": "ts-node-dev ./01_verificação_de_tipos/exemplo_03.ts"
   },
   "repository": {
     "type": "git",
