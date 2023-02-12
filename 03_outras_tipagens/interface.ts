@@ -1,11 +1,19 @@
 /*
 * Podemos utilizar interface na definição de tipos
 */
-interface Point {
-    x: number,
-    y: number
+interface IUser {
+    id: number | string,
+    name: string
 }
 
-function heigthLine(point: Point) {
-    return Math.abs(point.x - point.y);
+interface IPayment {
+    method: string
+}
+
+interface IAccount extends IUser, IPayment {}; // interseção de tipos para interfaces
+
+let newAccount: IAccount = {
+    id: 1,
+    name: 'luquinhascds',
+    method: 'pix'
 }
