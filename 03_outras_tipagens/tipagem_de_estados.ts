@@ -5,9 +5,15 @@ type CardProps = {
     name: string
 }
 
+type User = {
+    name: string,
+    years: number
+}
+
 /*
 export function List({ list }: CardProps[]) {
     const [count, setCount] = useState<number>(0);
+    // const [user, setUser] = useState<User>({} as User);
 
     return (
         <div>
