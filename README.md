@@ -1,34 +1,9 @@
 # TypeScript
 Aprendizado da linguagem (superset) TypeScript
 
-## Adicionando TypeScript ao Projeto React
+## Migração de JavaScript para TypeScript em um Projeto Vite
 - npm i typescript --save-dev
-- crie um arquivo chamado tsconfig.json
-- cole o seguinte trecho no arquivo:
-{
-  "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext"
-    ],
-    "allowJs": false,
-    "skipLibCheck": false,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "include": [
-    "./src"
-  ]
-}
+- npx tsc
 - npm i --save-dev @types/react
+- No link, (projeto)[https://stackblitz.com/edit/vitejs-vite-scw8cv?file=index.html&terminal=dev], copie e cole os seguintes arquivos: 'vite.config.ts', 'tsconfig.json', 'tsconfig.node.json'
+- Após isto basta alterar as extensões de arquivo, como por exemplo: .jsx para .tsx. Em seguida, criando types ou interfaces para tipagem de variáveis, funções e estados
