@@ -17,3 +17,15 @@ let newAccount: IAccount = {
     name: 'luquinhascds',
     method: 'pix'
 }
+
+interface Image {
+    imageUrl: string,
+    className?: string
+}
+
+interface Text {
+   label: string,
+   className?: string
+}
+
+interface Card extends Image, Text {};
